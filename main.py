@@ -26,3 +26,13 @@ app.include_router(clientes.router, prefix="/clientes")
 app.include_router(vehiculos.router, prefix="/vehiculos")
 app.include_router(ordenes.router, prefix="/ordenes")
 app.include_router(servicios.router, prefix="/servicios")
+
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)

@@ -1,0 +1,55 @@
+<h1>PRUEBA</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Taller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>🚗 Sistema de Taller</h1>
+
+<!-- CLIENTES -->
+<section>
+    <h2>Clientes</h2>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="telefono" placeholder="Teléfono">
+    <button onclick="crearCliente()">Agregar Cliente</button>
+    <ul id="listaClientes"></ul>
+</section>
+
+<!-- VEHÍCULOS -->
+<section>
+    <h2>Vehículos</h2>
+    <input type="text" id="placa" placeholder="Placa">
+    <input type="text" id="marca" placeholder="Marca">
+    <input type="text" id="modelo" placeholder="Modelo">
+    <input type="number" id="cliente_id" placeholder="ID Cliente">
+    <button onclick="crearVehiculo()">Agregar Vehículo</button>
+    <ul id="listaVehiculos"></ul>
+</section>
+
+<!-- ÓRDENES -->
+<section>
+    <h2>Órdenes</h2>
+    <input type="text" id="descripcion" placeholder="Descripción">
+    <input type="number" id="vehiculo_id" placeholder="ID Vehículo">
+    <button onclick="crearOrden()">Agregar Orden</button>
+    <ul id="listaOrdenes"></ul>
+</section>
+
+<!-- SERVICIOS -->
+<section>
+    <h2>Servicios</h2>
+    <input type="text" id="servicio_nombre" placeholder="Nombre servicio">
+    <input type="number" id="costo" placeholder="Costo">
+    <input type="number" id="orden_id" placeholder="ID Orden">
+    <button onclick="crearServicio()">Agregar Servicio</button>
+    <ul id="listaServicios"></ul>
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
