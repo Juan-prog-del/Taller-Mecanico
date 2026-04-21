@@ -1,4 +1,4 @@
-# modulo  clientes activos
+# Modulo  Clientes Activos
 
 from fastapi import APIRouter
 from modelos import Cliente
